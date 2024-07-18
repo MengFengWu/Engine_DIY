@@ -1,0 +1,31 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "files.associations": {
+    "string.h": "c",
+    "*.tcc": "c",
+    "bitset": "c",
+    "concepts": "c",
+    "memory_resource": "c",
+    "optional": "c",
+    "future": "c",
+    "new": "c",
+    "stop_token": "c",
+    "functional": "c",
+    "variant": "c",
+    "stdint.h": "c",
+    "decode_png.h": "c",
+    "spi_master.h": "c",
+    "cstdio": "c",
+    "fstream": "c",
+    "compare": "c",
+    "cstdint": "c",
+    "rendermanager.h": "c",
+    "st7789.h": "c",
+    "task.h": "c",
+    "freertos.h": "c",
+    "stdbool.h": "c"
+  },
+  "idf.flashType": "UART",
+  "idf.adapterTargetName": "esp32",
+  "idf.port": "/dev/tty.usbserial-10"
+}
