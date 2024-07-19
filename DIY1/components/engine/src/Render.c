@@ -332,25 +332,25 @@ void renderManagerReadFull(RenderManager* obj, RenderObject* renderObject)
     int16_t fullHeight;
 
     //for example,
-    if(prePosX >= posX)
+    if(prePosX < posX)
+    {
+        fullPosX = prePosX;
+        fullWidth = posX + width - prePosX;
+    }
+    else
     {
         fullPosX = posX;
-        fullWidth = prePosX - posX + width;
+        fullWidth = prePosX + width - posX;
+    }
+    if(prePosY < posY)
+    {
+        fullPosY = prePosY;
+        fullHeight = posY + height - prePosY;
     }
     else
     {
-        fullPosX = ???;
-        fullWidth = ???;
-    }
-    if(prePosY >= posY)
-    {
-        fullPosY = ???;
-        fullHeight = ???;
-    }
-    else
-    {
-        fullPosY = ???;
-        fullHeight = ???;
+        fullPosY = posY;
+        fullHeight = prePosY + height - posY;;
     }
     //TO-DO ends
     
